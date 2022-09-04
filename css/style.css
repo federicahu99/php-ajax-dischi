@@ -62,14 +62,14 @@ header img {
 .single-card {
     display: flex;
     flex-direction: column;
-    flex-basis: calc( 100% / 5 - 100px);
+    width: 180px;
 }
 
 .single-card img {
   object-fit: cover;
   object-position: center;
-  height: 150px;
-  width: 150px;
+  height: 140px;
+  width: 130px;
 }
 
 .single-card h2,
