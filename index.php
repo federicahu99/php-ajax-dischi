@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Discs</title>
 </head>
 <body>
@@ -17,11 +17,13 @@
     <section>
         <div class="flex container">
             <?php foreach($discs as $disc) :?>
-                <div class="card">
-                    <img src="<?php $disc['poster'] ?>" alt="<?= $disc['title'] ?>">
-                    <h3> <?php $disc['title'] ?> </h3>
-                    <h4> <?php $disc['author'] ?> </h4>
-                    <h5> <?php $disc['year'] ?> </h5>
+                <div class="single-card">
+                        <div class="card">
+                        <img src="<?php $disc['poster'] ?>" alt="<?= $disc['title'] ?>">
+                        <h2> <?php $disc['title'] ?> </h2>
+                        <h4> <?php $disc['author'] ?> </h4>
+                        <h4> <?php $disc['year'] ?> </h4>
+                    </div>
                 </div>
             <?php endforeach ?>
         </div>
