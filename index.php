@@ -14,20 +14,20 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="Spotify logo"/>
     </header>
 
-    <section>
+    <main>
         <div class="flex container">
             <?php foreach($discs as $disc) :?>
                 <div class="single-card">
-                        <div class="card">
-                        <img src="<?php $disc['poster'] ?>" alt="<?= $disc['title'] ?>">
-                        <h2> <?php $disc['title'] ?> </h2>
-                        <h4> <?php $disc['author'] ?> </h4>
-                        <h4> <?php $disc['year'] ?> </h4>
+                    <div class="card">
+                        <img src="<?php echo $disc['poster'] ?>" alt="<?php $disc['title'] ?>">
+                        <h2> <?php echo $disc['title'] ?> </h2>
+                        <h4> <?php echo $disc['author'] ?> </h4>
+                        <h4> <?php echo $disc['year'] ?> </h4>
                     </div>
                 </div>
             <?php endforeach ?>
         </div>
-    </section>
+    </main>
 
 </body>
 </html>
