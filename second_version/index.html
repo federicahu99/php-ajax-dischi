@@ -18,8 +18,8 @@
 
     <main >
         <div class="flex container" id="root">
-                <div class="single-card">
-                    <div class="card" v-for="disc in discs">
+                <div class="single-card" v-for="disc in discs">
+                    <div class="card" >
                         <img :src="disc.poster" alt="">
                         <h2> {{disc.title}} </h2>
                         <h4> {{disc.author}} </h4>
