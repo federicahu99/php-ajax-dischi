@@ -1,12 +1,14 @@
-const app= new Vue ({
+Vue.config.devtools = true;
+
+const app = new Vue ({
     el: "#root",
     data: {
-        discs: []
+        discs: [],
     },
     mounted(){
-        axios.get("../../api/api.php")
+        axios.get("../api/index.php")
         .then(res => {
-            this.discs= res.data;
+            this.discs = res.data;
         })
     }
 })
